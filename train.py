@@ -29,7 +29,7 @@ train_number = round(line_count * 0.2)
 
 test, testLabel = total_file[0:train_number], totalLabel_file[0:train_number]
 train, trainLabel = total_file[train_number:], totalLabel_file[train_number:]
-#
+
 # clf = svm.SVC(kernel='linear')
 # clf.fit(train, trainLabel)
 # testAcc = clf.score(test, testLabel)

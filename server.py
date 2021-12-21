@@ -3,7 +3,7 @@ from flask import Flask
 from flask import request
 import os
 
-port = os.getenv('VCAP_APP_PORT', '5000')
+port = os.environ.get('PORT', '5000')
 
 app = Flask(__name__)
 
